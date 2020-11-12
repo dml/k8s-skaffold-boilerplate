@@ -1,0 +1,9 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: dmitter/skaffold-test
+deploy:
+  kubectl:
+    manifests:
+      - k8s-*
